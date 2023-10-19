@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+#[build-system]
+#requires = ["setuptools"]
+#build-backend = "setuptools.build_meta"
+#$>pip show -v ft_package
+#Name: ft_package
+#Version: 0.0.1
+#Summary: A sample test package
+#Home-page: https://github.com/eagle/ft_package
+#Author: eagle
+#Author-email: eagle@42.fr
+#License: MIT
+#Location: /home/eagle/...
+#Requires:
+#Required-by:
+#Metadata-Version: 2.1
+#Installer: pip
+#Classifiers:
+#Entry-points:
+#$>
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+Author = "xuwang"
+Authors_email="xuwang@42.fr"
+License = "école 42"
+Home-page = "https://github.com/eagle/ft_package"
+description = "A sample test package"
+readme = "README.md"
+requires-python = ">=3.7"
+Location = "/home/eagle/..."
+Requires = ""
+Required-by = ""
+Metadata-Version = "2.1"
+Installer = "pip"
+Classifiers = ""
+Entry-points = ""
+#classifiers = [
+#    "Programming Language :: Python :: 3",
+#    "License :: OSI Approved :: MIT License",
+#    "Operating System :: OS Independent",
+#]
+
+
+

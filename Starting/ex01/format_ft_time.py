@@ -1,12 +1,8 @@
 from datetime import datetime
+import time
 
-
-epoch_time = datetime(1970, 1, 1)
-
-delta = (datetime.now() - epoch_time).total_seconds()
-
-scientific_notation = "{:.2e}".format(16700000)
-
+my_time = time.time()
 current_date = datetime.now().date().strftime("%b %d %Y")
-
-print("Seconds since January 1, 1970:", delta, "or", scientific_notation, "in scientific notation\n" ,current_date)
+# ,4f:4 decimal places with comma separator, .2e:Exponent notation
+print("Seconds since January 1, 1970: {:,.4f} or".format(my_time), "{:.2e}".format(my_time), "in scientific notation")
+print(current_date)

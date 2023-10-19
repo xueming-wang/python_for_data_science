@@ -1,13 +1,13 @@
-ft_list  = ["Hello", "tata!"]
+ft_list = ["Hello", "tata!"]
 ft_tuple = ("Hello", "toto!")
-ft_set   = {"Hello", "tutu!"}
-ft_dict  = {"Hello" : "titi!"}
+ft_set = {"Hello", "tutu!"}
+ft_dict = {"Hello": "titi!"}
 
 # list 
 ft_list[1] = "World!"
 
 # tuple
-ft_tuple_lst= list(ft_tuple)
+ft_tuple_lst = list(ft_tuple)
 ft_tuple_lst[1] = "France!"
 ft_tuple = tuple(ft_tuple_lst)
 

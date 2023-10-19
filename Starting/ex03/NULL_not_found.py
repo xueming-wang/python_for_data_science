@@ -1,8 +1,7 @@
 import inspect
 
 def NULL_not_found(object: any) -> int:
-    
-	## get the name of the variable
+    # get the name of the object
     frame = inspect.currentframe()
     frame = inspect.getouterframes(frame)[1]
     string = inspect.getframeinfo(frame[0]).code_context[0].strip()
@@ -13,17 +12,16 @@ def NULL_not_found(object: any) -> int:
             names.append(i.split('=')[1].strip())
         else:
             names.append(i)
-    
-	## replace name
-    variable_name = names[0]
-    variable_name = variable_name.replace("Garlic", "Cheese")
-    
-	## get type
+
+    ## replace name
+    variable_name = names[0].replace("Garlic", "Cheese")
+
+    ## get type
     myType = type(object)
     if myType is str and len(object) != 0:
         print("Type not found")
         return 1
-    
-	## print name. value, and type
-    print(variable_name, ":", object,":", myType)
+
+    ## print name. value, and type
+    print(f"{variable_name}:", object, myType)
     return 0
